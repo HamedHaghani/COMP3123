@@ -1,0 +1,123 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #6dd5fa, #2980b9);
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url('./assets/noaa-Led9c1SSNFo-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+  font-size: 1rem;
+  margin: 5px 0 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.main-weather {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.main-weather h2 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.main-weather p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.main-weather img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+/* Forecast section */
+.forecast {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+  overflow-x: auto;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.forecast-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.forecast-card p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.forecast-card img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .main-weather {
+    width: 90%;
+  }
+
+  .forecast {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  .forecast-card {
+    min-width: 100px;
+  }
+}
