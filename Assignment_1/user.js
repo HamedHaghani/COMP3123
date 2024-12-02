@@ -1,7 +1,7 @@
 const express =require('express');
 const router = express.Router();
 const UserModel = require("./models/users");
-
+// const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 
@@ -31,6 +31,7 @@ router.post('/signup', async (req, res) => {
       return res.status(500).json({ message: 'Server Error' });
     }
   });
+
 
  
 
